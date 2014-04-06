@@ -26,6 +26,16 @@
   "content_scripts": [
     {
       "matches": [
+        "http://162.243.99.214:9501/*"
+      ],
+      "js": [
+        "moteio.js",
+        "remotes/2048.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
         "http://*.hypem.com/*",
         "http://hypem.com/*"
       ],
